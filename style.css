@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(108, 153, 230);
+}
+
+header > nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 50%;
+    list-style: none;
+}
+
+a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 950px) {
+    header > nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+#Landing {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.info {
+    width: 40%;
+    min-width: 516px;
+}
+
+#Landing > img {
+    width: 30%;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.info > h1 {
+    font-size: 50px;
+}
+
+.info > p {
+    font-size: 20px;
+}
+
+.info > button {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+button {
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(108, 153, 230);
+    color: white;
+}
+
+@media (max-width: 570px) {
+    .info > h1 {
+        font-size: 30px;
+    }
+    .info {
+        width: 100%;
+        min-width: 0px;
+    }
+}
+
+footer > p  {
+    display: flex;
+    justify-content: center;
+}
+
+#companies {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.power2_img {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    footer > #companies {
+        display: none;
+    }
+    .power2_img {
+        display: block;
+    }
+}
+
+.power2_img {
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
